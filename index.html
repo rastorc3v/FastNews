@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <title>Fast News - The Best Site About Everything</title>
+  <meta name="description" content="News about sport and games" />
+  <meta name="keywords" content="news, sport, games" />
+  <meta name="author" content="Uladzislau Rastarhuyeu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="Fast News Home Page" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="//rastorc3v.github.io" />
+  <meta property="og:image" content="//rastorc3v.github.io/media/screenshots/screenshot.jpeg" />
+  <meta property="og:site_name" content="Fast News" />
+
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider-style.css">
+  <link rel="stylesheet" href="css/adaptive.css">
+
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap">
+
+  <script defer src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav role="navigation">
+      <ul role="menubar">
+        <li id="active" role="menuitem"><a href="index.html" accesskey="h" title="Site home page" tabindex="-1">HOME</a></li>
+        <li role="menuitem"><a href="" accesskey="s" title="Sport news" tabindex="2">SPORT</a></li>
+        <li role="menuitem"><a href="" accesskey="b" title="Blog page" tabindex="3">BLOG</a></li>
+        <li role="menuitem"><a href="" accesskey="p" title="Site pages" tabindex="4">PAGES</a></li>
+        <li role="menuitem"><a href="" accesskey="c" title="Site contacts" tabindex="5">CONTACT</a></li>
+        <li id="menu-button" accesskey="m"><a>MENU</a></li>
+        <li role="menuitem"><a onclick="showLoginForm();" accesskey="l" title="open site login form" tabindex="6">LOGIN</a></li>
+      </ul>
+      <div id="dropdown" role="menu"></div>
+    </nav>
+    <div id="loginForm">
+      <form>
+        <span class="lnr lnr-cross"></span>
+        <h1>Login Information</h1>
+        <p>
+          <label for="email">
+            <span>E-mail: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="password">
+            <span>Password: </span>
+            <abbr title="required">*</abbr>
+          </label>
+          <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+          <span>Not registration yet?</span> <a href="">Register now!</a>
+        </p>
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+    <aside>
+      <img id="logo" src="media/logo.PNG" alt="Fast news. Clean, cool and powerful magazine theme">
+      <img id="ads" src="media/ads.png" role="banner" alt="3docean. 3D Models, Textures and More"/>
+    </aside>
+  </header>
+  <main>
+    <section id="left">
+      <section class="dot-slider">
+        <div class="dots">
+          <ul>
+            <li class="active">0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <article>
+            <img src="media/new/Jackie%20Martinez2.jpg" alt="Girl on the coach with lamp on her legs lying in bed" longdesc="Girl on the coach with lamp on her legs lying in bed" />
+            <section>
+              <p>in: <a>Fashion</a>  |  <a><time datetime="2013-11-05">November 5, 2013</time></a></p>
+              <h2><a>Prince William And Kate Middleto..</a></h2>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </section>
+          </article>
+
+          <article>
+            <img src="media/new/bluebaloons.jpg" alt="Girl with blue balloon lying in grass" longdesc="Girl with blue balloon lying in grass" />
+            <section>
+              <p>in: <a>Fashion</a> | <a><time datetime="2013-10-24">October 24, 2013</time></a></p>
+              <h2><a>Prince William And Kate Middleto..</a></h2>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci,</p>
+            </section>
+          </article>
+
+          <article>
+            <img src="https://source.unsplash.com/user/omgitsyeshi" alt="Random image" longdesc="This is random image from unsplash image service" />
+            <section>
+              <p>in: <a>Fashion</a> | <a><time datetime="2013-11-05">November 5, 2013</time></a></p>
+              <h2><a>Prince William And Kate Middleto..</a></h2>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </section>
+          </article>
+
+          <article>
+           <img src="https://source.unsplash.com/user/omgitsyeshi" alt="Random image" longdesc="This is random image from unsplash image service" />
+            <section>
+              <p>in: <a>Fashion</a> | <a><time datetime="2013-11-05">November 5, 2013</time></a></p>
+              <h2><a>Prince William And Kate Middleto..</a></h2>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </section>
+          </article>
+
+          <article>
+            <img src="https://source.unsplash.com/user/omgitsyeshi" alt="Random image" longdesc="This is random image from unsplash image service" />
+            <section>
+              <p>in: <a>Fashion</a> | <a><time datetime="2013-11-05">November 5, 2013</time></a></p>
+              <h2><a>Prince William And Kate Middleto..</a></h2>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </section>
+          </article>
+
+          <article>
+            <img src="https://source.unsplash.com/user/omgitsyeshi" alt="Random image" longdesc="This is random image from unsplash image service" />
+            <section>
+              <p>in: <a>Fashion</a> | <a><time datetime="2013-11-05">November 5, 2013</time></a></p>
+              <h2><a>Prince William And Kate Middleto..</a></h2>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h3>TENNIS NEWS</h3>
+        <div class="d-flex">
+          <section class="post-l">
+            <article>
+              <img src="media/new/elma.jpg" alt="Elmo is a Muppet character on the children's television show Sesame Street." />
+              <h4><a>Prince William And Kate Middleto.</a></h4>
+              <a><time datetime="2013-10-25">&#8212; October 25, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+          </section>
+
+          <section class="post-s">
+            <article>
+              <img src="media/new/castle.jpg" alt="Some kind of round structure. Photo from the inside of the building." />
+              <section>
+                <h4><a>Loris Capirossi Retires, Riders Pay Tribute</a></h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+              </section>
+            </article>
+
+            <article class="border-top">
+              <h4><a>Prince William And Kate Middleto..</a></h4>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="border-top">
+              <h4><a>Loris Capirossi Retires, Riders Pay Tribute</a></h4>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <h3>NHL NEWS</h3>
+        <div class="d-flex">
+          <section class="post-l">
+            <article>
+              <img src="media/new/man.jpg" alt="A man seals an object like a table lamp with duct tape"/>
+              <h4><a>Prince William And Kate Middleto.</a></h4>
+              <a><time datetime="2013-11-05">&#8212; November 5, 2013</time></a>
+              <p>At vero eos et accusamus et iusto oido dignissimos  ducimus qui blandtiis praesentium</p>
+            </article>
+          </section>
+
+          <section class="post-s">
+            <article>
+              <img src="media/new/surfing.jpg" alt="The man lies on the beach. Two surfboards lie above his head. Three men stand in the background" />
+              <h4><a>Loris Capirossi Retires, Riders Pay Tribute</a></h4>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="border-top">
+              <h4><a>Prince William And Kate Middleto..</a></h4>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="border-top">
+              <h4><a>Prince William And Kate Middleto..</a></h4>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </article>
+          </section>
+        </div>
+      </section>
+    </section>
+    <section id="right">
+      <section>
+        <h3>FEATURED NEWS
+          <span onclick="moveSlide(-1);" class="lnr lnr-chevron-right-circle"></span>
+          <span onclick="moveSlide(1);" class="lnr lnr-chevron-left-circle"></span>
+        </h3>
+        <div class="arrow-slider">
+          <div class="wrapper">
+            <article class="post-m">
+              <img src="https://source.unsplash.com/random" alt="Random image" longdesc="This is random image from unsplash image service" />
+              <h4><a>Prince William And Kate Middleto..</a></h4>
+              <a><time datetime="2013-10-25">&#8212; October 25, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-m">
+              <img src="media/new/film.jpg" alt="The man in the picture is filming the car with a professional camera for filming" />
+              <h4><a>Loris Capirossi Retires, Riders Pay Tribute</a></h4>
+              <a><time datetime="2013-10-25">&#8212; October 25, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-m">
+              <img src="media/new/robbo.jpg" alt="Depicted is something like an electron microscope with two holes with lenses for observing something" />
+              <h4><a>Prince William And Kate Middleto..</a></h4>
+              <a><time datetime="2013-10-25">&#8212; October 25, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-m">
+              <img src="media/new/Jackie%20Martinez2.jpg" alt="Girl on the coach with lamp on her legs lying in bed" />
+              <h4><a>Prince William And Kate Middleto.</a></h4>
+              <a><time datetime="2013-11-05">&#8212; November 5, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-m">
+              <img src="media/new/Jackie%20Martinez1.jpg" alt="Girl sitting on the bed hugging a pillow and looking at the camera" />
+              <h4><a>Prince William And Kate Middleto.</a></h4>
+              <a><time datetime="2013-11-05">&#8212; November 5, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-m">
+              <img src="https://source.unsplash.com/random" alt="Random image" longdesc="This is random image from unsplash image service" />
+              <h4><a>Prince William And Kate Middleto.</a></h4>
+              <a><time datetime="2013-11-05">&#8212; November 5, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="left-sections">
+          <h3>FASHION</h3>
+          <section>
+            <article class="post-xl">
+              <img src="media/new/Jackie%20Martinez2.jpg" alt="Girl on the coach with lamp on her legs lying in bed" />
+              <h4><a>Prince William And Kate Middleto.</a></h4>
+              <a><time datetime="2013-11-05">&#8212; November 5, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-xs border-top">
+              <img src="media/new/Jackie%20Martinez1.jpg" alt="Girl sitting on the bed hugging a pillow and looking at the camera" />
+              <h4><a>Sergio Aguero: Team comes before me</a></h4>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </article>
+
+            <article class="post-xs border-top">
+              <img src="media/new/skygirl.jpg" alt="The girl stands with her back to the tree. It is surrounded on all sides by streaks of fog"/>
+              <h4><a>Loris Capirossi Retires, Riders Pay Tribute</a></h4>
+              <p>Maecenas aliquet, elit vitae egestas lacinia, nibh purus accumsan metus, ut mollis est eros tempus sem.</p>
+            </article>
+          </section>
+          <section>
+            <h3>SPORT NEWS</h3>
+            <article class="no-thumb">
+              <h4><a>Post with no image thumbnails</a></h4>
+              <a><time datetime="2013-11-06">&#8212; November 6, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+
+            <article class="post-s">
+              <img src="media/new/interview.jpg" alt="Image of interviewing some black man with glasses" />
+              <h4><a>Loris Capirossi Retires, Riders Pay Tribute</a></h4>
+              <a><time datetime="2013-11-05">&#8212; November 5, 2013</time></a>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </article>
+          </section>
+        </div>
+        <div class="right-sections">
+          <section>
+            <h3>VIDEO</h3>
+            <article class="video">
+              <h4><a>Make Your Own Video Game With No</a></h4>
+              <a><time datetime="2013-10-26">&#8212; October 26, 2013</time></a>
+              <img src="media/new/love.jpg" alt="man and wife are sitting in a cafe and want to kiss" />
+              <a><div class="play-button"></div></a>
+            </article>
+
+            <article class="video">
+              <h4><a>Make Your Own Video Game With No</a></h4>
+              <a><time datetime="2013-10-26">&#8212; October 26, 2013</time></a>
+              <img src="media/new/sunset.jpg" alt="Picture with a beautiful, slightly yellowish sunset against the background of the sea" />
+              <a><div class="play-button"></div></a>
+            </article>
+
+            <article class="video">
+              <h4><a>Make Your Own Video Game With No</a></h4>
+              <a><time datetime="2013-10-26">&#8212; October 26, 2013</time></a>
+              <img src="media/new/box.jpg" alt="Girl straightens boxing red bandages on her hands" />
+              <a><div class="play-button"></div></a>
+            </article>
+          </section>
+        </div>
+      </section>
+    </section>
+  </main>
+  <label for="bottom-nav-menu">
+    <select id="bottom-nav-menu">
+      <option value="index.html">Home</option>
+      <option value="sport.html">Sport</option>
+      <option value="blog.html">Blog</option>
+      <option value="pages.html">Pages</option>
+      <option value="contact.html">Contact</option>
+    </select>
+  </label>
+  <hr id="separator">
+  <footer>
+    <p>Copyright &copy; 2020 . All Rights Reserved. Designed by rastorc3v.com.<br>
+    The trade marks and images used in the design are the copyright of  their respective owners. They are used only for display purpose.</p>
+  </footer>
+
+  <script defer src="js/dot-slider.js"></script>
+  <script defer src="js/arrow-slider.js"></script>
+  <script defer src="js/func.js"></script>
+</body>
+</html>

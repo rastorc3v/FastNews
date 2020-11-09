@@ -1,0 +1,77 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.dot-slider {
+  @include size(500px, 500px);
+  overflow: hidden;
+  position: relative;
+
+  .dots {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    z-index: 100;
+
+    ul li {
+      display: inline-block;
+      list-style: none;
+      @include size(14px, 14px);
+      background-color: #FFF;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      text-indent: -9999px;
+    }
+    ul li.active {
+      background-color: #008e96;
+    }
+  }
+
+  section {
+    position: relative;
+    background-color: rgba(#000, 0.8);
+    color: #FFF;
+    margin: 0 25px;
+    padding: 2px 20px 1px;
+    top: -184px;
+    h2 {
+      margin: 0;
+      font-size: 36px;
+      line-height: 30px;
+    }
+    p:first-child {
+      font-size: 11px;
+      margin: 14px 0;
+      color: #FFF;
+      time {
+        color: #FFF;
+        font-size: 11px;
+        font-style: normal;
+      }
+    }
+
+    p:last-child {
+      font-size: 13px;
+      margin: 14px 0;
+      color: #FFF !important;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+.wrapper {
+  display: flex;
+}
+
+
