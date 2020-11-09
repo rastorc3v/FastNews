@@ -1,0 +1,2 @@
+# FastNews
+Internship Frontend Project
